@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e6e6ff;
+}
+
+.calculator {
+  height: 32rem;
+  width: 18rem;
+  background: #000033;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

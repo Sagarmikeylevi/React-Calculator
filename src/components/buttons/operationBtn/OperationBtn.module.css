@@ -1,0 +1,33 @@
+.operations {
+  height: 3.6rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.clearbtn {
+  font-size: x-large;
+  font-weight: 400;
+  color: #cc0066;
+}
+
+.actions {
+  font-size: x-large;
+  font-weight: 400;
+  color: #9999ff;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.icons {
+  font-size: medium;
+  color: #9999ff;
+}
