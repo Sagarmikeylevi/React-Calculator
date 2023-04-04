@@ -24,8 +24,8 @@ const OperationBtn = () => {
           <Button className={classes.actions}>
             <FaMinus className={classes.icons} />
           </Button>
-          <Button className={classes.actions}>
-            <FaEquals className={classes.icons} />
+          <Button  className={classes.equals}>
+            <FaEquals />
           </Button>
         </div>
       </div>

@@ -2,3 +2,36 @@
     height: 40%;
     width: 98%;
 }
+
+p {
+    padding-top: 0.5rem;
+    text-align: center;
+    color: azure;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.caculation {
+    margin-top: 4.5rem;
+    height: 2rem;
+    margin-right: 1rem;
+    width: 95%;
+    display: flex;
+    font-size: medium;
+    color: gray;
+    font-weight: 400;
+    justify-content: flex-end;
+}
+
+.solution {
+    height: 2rem;
+    margin-right: 1rem;
+    width: 95%;
+    display: flex;
+    font-size: xx-large;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    justify-content: flex-end;
+}
