@@ -2,18 +2,18 @@ import React from "react";
 import classes from "./Display.module.css";
 import Card from "../UI/Card";
 
-const Display = () => {
+const Display = (props) => {
   return (
     <Card className={classes.displayScreen}>
       <p>Calculator</p>
-      <div className={classes.caculation}>
-        100 + 200
-      </div>
 
-      <div className={classes.solution}>
-        300
-      </div> 
+      {props.calculationValue.length > 0 ? (
+        <div className={classes.caculation}>{props.calculationValue}</div>
+      ) : (
+        <div className={classes.caculation}></div>
+      )}
 
+      <div className={classes.solution}>{props.displayValue}</div>
     </Card>
   );
 };

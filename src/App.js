@@ -1,6 +1,6 @@
 import React from "react";
 import Calculator from "./components/Calculator";
-function App() {
+function App(props) {
   return (
     <>
       <Calculator />
