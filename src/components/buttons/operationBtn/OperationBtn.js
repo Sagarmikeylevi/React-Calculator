@@ -47,7 +47,7 @@ const OperationBtn = (props) => {
           </Button>
           <Button
             className={classes.equals}
-            onClick={() => props.onGetVal("equals")}
+            onClick={() => props.onClickSubmit("equals")}
           >
             <FaEquals />
           </Button>

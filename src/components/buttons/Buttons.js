@@ -5,16 +5,22 @@ import NumberBtn from "./numbersBtn/NumberBtn";
 
 const Buttons = (props) => {
   const [value, setValue] = useState("0");
-  const [calVal, setCalVal] = useState('');
+  const [calVal, setCalVal] = useState("");
 
   useEffect(() => {
     props.onDisplay(value);
     props.calValue(calVal);
-  }, [props, value]);
+
+
+  }, [props, value, calVal]);
 
   const clickHandler = (value) => {
+    if(calVal.length > 0) {
+      setValue("");
+    }
+    setCalVal("");
     setValue((prevVal) => {
-      if(prevVal === "0") prevVal = "";
+      if (prevVal === "0") prevVal = "";
 
       if (value === "clear") return "0";
 
@@ -69,11 +75,6 @@ const Buttons = (props) => {
         return prevVal + " - ";
       }
 
-      if (value === "equals") {
-        setCalVal(prevVal);
-        return eval(prevVal);
-      } 
-      
       if (value === "000") return prevVal + value;
 
       if (value === ".") {
@@ -86,9 +87,13 @@ const Buttons = (props) => {
     });
   };
 
+  const submitHandler = () => {
+    setCalVal(value);
+  };
+
   return (
     <div className={classes.buttonScreen}>
-      <OperationBtn onGetVal={clickHandler} />
+      <OperationBtn onGetVal={clickHandler} onClickSubmit={submitHandler} />
       <NumberBtn onGetVal={clickHandler} />
     </div>
   );

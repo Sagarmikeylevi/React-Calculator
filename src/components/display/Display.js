@@ -13,7 +13,11 @@ const Display = (props) => {
         <div className={classes.caculation}></div>
       )}
 
-      <div className={classes.solution}>{props.displayValue}</div>
+      {props.calculationValue.length > 0 ? (
+        <div className={classes.solution}>{eval(props.displayValue)}</div>
+      ) : (
+        <div className={classes.solution}>{props.displayValue}</div>
+      )}
     </Card>
   );
 };
