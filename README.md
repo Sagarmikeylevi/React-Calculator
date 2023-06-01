@@ -19,6 +19,8 @@ The Calculator application is built using the following technologies:
 - HTML: The markup language for creating the structure and layout of the user interface.
 - CSS: The styling language used to enhance the visual appearance of the Calculator.
 
+![React-Calculator](https://github.com/Sagarmikeylevi/React-Calculator/assets/114811573/dc56a221-8df5-4388-a09c-216556ea4e1c)
+
 ## Installation
 - Clone the repository
 - Install dependencies with npm install
