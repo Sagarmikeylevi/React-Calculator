@@ -28,3 +28,6 @@ The Calculator application is built using the following technologies:
 
 ## Deployement
 Project already deployed on Render. Visit: https://sagarmikeylevi-calculator.netlify.app/
+
+## Video 
+Link: https://www.youtube.com/watch?v=uEWJcJmcJzw
